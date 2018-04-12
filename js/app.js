@@ -67,6 +67,7 @@ Player.prototype.update = function(dt) {
         this.player_y = 410;
     }else if(this.player_y < -65){
         this.player_y = 410;
+        console.log('up');
     }
 };
 

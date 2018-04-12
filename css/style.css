@@ -1,3 +1,32 @@
 body {
     text-align: center;
 }
+
+.win_modal {
+    background: rgba(210, 210, 200, 0.95);
+    width: 390px;
+    margin: 0px auto;
+    height: 200px;
+    padding: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    display: none;
+}
+
+.win_modal p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+}
+
+.win_modal button {
+    background: #2e9610;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 3px;
+}

@@ -78,9 +78,9 @@ Player.prototype.update = function(dt) {
     }
     if(this.player_y > 410){
         this.player_y = 410;
-    }else if(this.player_y < -65){
+    }else if(this.player_y < 0){
         this.player_y = 410;
-        console.log('up');
+        document.getElementById('win_modal').style.display = "block";
     }
 };
 
@@ -147,3 +147,7 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+function hideModal(){
+    document.getElementById('win_modal').style.display = "none";
+}

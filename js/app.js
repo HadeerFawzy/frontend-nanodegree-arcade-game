@@ -26,6 +26,19 @@ Enemy.prototype.update = function(dt) {
         this.enemy_x += this.speed * dt;
     }
 
+    // check if any of the enemies hit the player
+    // http://blog.sklambert.com/html5-canvas-game-2d-collision-detection/
+    if( player.player_x + 10 < this.enemy_x + 85 &&
+        player.player_x + 10 + 85 > this.enemy_x &&
+        player.player_y < this.enemy_y + 65 &&
+        player.player_y + 65 > this.enemy_y ){
+
+        player.player_x = 200;
+        player.player_y = 410;
+
+        // alert("Ouuuch");
+    }
+
 };
 
 // Draw the enemy on the screen, required method for game

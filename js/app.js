@@ -117,7 +117,7 @@ Player.prototype.handleInput = function(keyCode){
         break;
     }
 
-}
+};
 
 
 

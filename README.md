@@ -11,3 +11,6 @@ There is no installation steps necessary.
 
 ## How to play
 Use the keyboard to move the player in the four direction, try to get it to the sea side, avoid hitting any bug.
+
+## Demo
+https://hadeerfawzy.github.io/frontend-nanodegree-arcade-game/.
